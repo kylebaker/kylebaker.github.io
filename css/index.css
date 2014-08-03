@@ -1,0 +1,182 @@
+html body{
+	font-family: 'Oxygen', sans-serif;
+}
+
+.text-center h2 {
+	padding-top: 60px;
+	font-weight: bold;
+}
+
+h3 {
+	padding-bottom: 30px;
+}
+
+p {
+	vertical-align: middle;
+}
+
+.vm {
+	float:none;
+	margin-right:-4px;
+}
+
+.other {
+	background-color: #F7F7F7;
+}
+
+@media (min-width: 768px) {
+	.navbar-nav {
+		margin: 0 auto;
+		display: table;
+		table-layout: fixed;
+		float:none;
+	}
+
+	section#contact {
+		height: calc(100vh - 50px);
+	}
+
+	section {
+		min-height: 500px;
+	}
+
+	header.row {
+		padding-top: 250px;
+		//margin-top: 50px;
+	}
+
+} 
+
+.navbar-default {
+	background-color: rgba(248, 248, 248, 0.7);
+	border-bottom: none;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus {
+	background-color: inherit;
+	padding: 15px 30px 15px 30px;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	color: rgba(52, 152, 219, 1);
+	background-color: inherit;
+	//color: white;
+}
+
+@media (max-width: 767px) {
+	header.row {
+		padding-top: 30vh;
+		margin-top: 50px;
+	}
+
+	header {
+		height: calc(100vh - 50px);
+	}
+
+	.navbar-default {
+		background-color: rgba(248, 248, 248, 1);
+		transition: background-color 0.5s ease;
+		border-bottom: none;
+	}
+
+	.navbar-default .navbar-nav>.active>a, 
+	.navbar-default .navbar-nav>.active>a:focus {
+		background-color: inherit;
+	}
+
+	.navbar-default .navbar-nav>.active>a:hover {
+		background-color: rgba(52, 152, 219, 1);
+		color: white;
+	}
+
+}
+
+header {	
+	//background: url("https://farm6.staticflickr.com/5555/14686089944_7ef37e45ab_h.jpg") no-repeat center center;
+	//background: url("https://s3.amazonaws.com/ooomf-com-files/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg") no-repeat center center;
+	//background: url("https://s3.amazonaws.com/ooomf-com-files/wdXqHcTwSTmLuKOGz92L_Landscape.jpg") no-repeat center center;
+	//background: url("../img/jet-sky.jpg") no-repeat center center;
+	//background: url("../img/camera.jpg") no-repeat center center;
+	//background: url("../img/jet-sky.jpg") no-repeat center center;
+	//background: url("../img/plains.jpg") no-repeat center center;
+	//background: url("../img/sheep.jpg") no-repeat center center;
+	background: url("../img/unsplash-kitsune-3.jpg") no-repeat center center;
+	//background: url("../img/wood.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100vh;
+}
+
+header.row {
+	color: #F8F8F8;
+	text-shadow: 0px 0px 21px rgba(20, 20, 20, 1);
+}
+header h1 {
+	font-size: 10vw;
+	font-weight: bold;
+}
+
+header h4 {
+	font-size: 7vw;
+	font-weight: bold;
+}
+#skills div {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+
+.spacer {
+	background: #3498db;
+	width: 100px;
+	height: 2px;
+	margin: auto !important;
+}
+
+#contact {
+	background-color: rgba(52, 152, 219, 1);
+	color: white;
+}
+
+#contact .btn {
+	font-weight: bold;
+	border-radius: 0px;
+	border: none;
+	background-color: #3498db;
+	color: white;
+	border: white 2px solid;
+	width: 100%;
+	transition: background-color 0.5s ease;
+	height: 50px;
+	font-size: 14px;
+}
+
+#contact .btn:hover {
+	background-color: white;
+	color: #3498db;
+	border: none;
+}
+
+.form-control {
+	border-radius: 0px;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+	border-color: rgba(229, 103, 23, 0.8);
+	box-shadow: red inset, 0 0 8px rgba(229, 103, 23, 0.6);
+	outline: 0 none;
+}
+
+#get-in-touch {
+	padding-left: 0;
+}
+
+#contact .spacer {
+	background-color: white;
+}
+@media (min-width: 768px) {
+	textarea.form-control {
+		height: calc(100vh - 600px);
+	}
+}

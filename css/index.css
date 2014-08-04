@@ -2,6 +2,9 @@ html body{
 	font-family: 'Oxygen', sans-serif;
 }
 
+.thumbnail {
+}
+
 .text-center h2 {
 	padding-top: 60px;
 	font-weight: bold;
@@ -56,7 +59,7 @@ p {
 .navbar-default .navbar-nav>.active>a, 
 .navbar-default .navbar-nav>.active>a:focus {
 	background-color: inherit;
-	padding: 15px 30px 15px 30px;
+	padding: 15px 27px 15px 27px;
 }
 
 .navbar-default .navbar-nav>.active>a:hover {

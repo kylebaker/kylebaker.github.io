@@ -1,53 +1,93 @@
-html body{
-	font-family: 'Oxygen', sans-serif;
+@font-face{
+	font-family: "Jaapokki";
+	src: url("../fonts/Jaapokki-font-package-1.0/Regular/Jaapokki-Regular.otf");
 }
 
-.thumbnail {
+body {
+	font-family: "Jaapokki";
+	font-size: 70px;
 }
 
-.text-center h2 {
-	font-weight: bold;
+nav {
+	font-size: 20px;
 }
 
-h3 {
-	padding-bottom: 30px;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
-p {
-	vertical-align: middle;
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
-.vm {
-	float:none;
-	margin-right:-4px;
+header {
+	background-image: url("../img/cara1 copy.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	height: 80vh;
+	padding-top: 15vh;
 }
 
-.other {
-	background-color: #F7F7F7;
+header h1 {
+	font-size: 6vh; 
+	color: #EE2C2C;
+	text-shadow: 0 0 40px black;
 }
 
-@media (min-width: 768px) {
-	.navbar-nav {
-		margin: 0 auto;
-		display: table;
-		table-layout: fixed;
-		float:none;
-	}
+.fa {
+	padding-top: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: red;
+	font-size: 10vh;
+	text-shadow: 0 0 40px black;
+}
 
-	section#contact {
-		height: calc(100vh - 50px);
-	}
+.fa:hover {
+	color: white;
+}
 
-	section {
-		min-height: 500px;
-	}
+section#hours {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #EE2C2C;
+	color: white;
+	text-shadow: 0 0 10px black;
+}
 
-	header{
-		padding-top: 250px;
-		//margin-top: 50px;
-	}
+section#pictures h1 {
+	color: white;
+	text-shadow: 0 0 50px black;
+}
 
-} 
+section#hi {
+	height: 20px;
+}
+
+#mixology {
+	padding-top: 0;
+	background-color: white;
+}
+
+section.mixology {
+	border-top: solid #00688B 5px;
+	border-bottom: solid #00688B 5px;
+	border-left: solid #00688B 10px;
+	border-right: solid #00688B 10px;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+section.mixology h3 {
+	color: #EE2C2C;
+	text-shadow: 0 0 2px black;
+}
+
+section.mixology div{
+	height: 140px;
+}
 
 .navbar-default {
 	background-color: rgba(248, 248, 248, 0.7);
@@ -62,115 +102,17 @@ p {
 }
 
 .navbar-default .navbar-nav>.active>a:hover {
-	color: rgba(52, 152, 219, 1);
+	color: rgba(238, 44, 44, 1);
 	background-color: inherit;
 	//color: white;
 }
 
-@media (max-width: 767px) {
-	header {
-		padding-top: 30vh;
-		margin-top: 50px;
-	}
-
-	header {
-		height: calc(100vh - 50px);
-	}
-
-	.navbar-default {
-		background-color: rgba(248, 248, 248, 1);
-		transition: background-color 0.5s ease;
-		border-bottom: none;
-	}
-
-	.navbar-default .navbar-nav>.active>a, 
-	.navbar-default .navbar-nav>.active>a:focus {
-		background-color: inherit;
-	}
-
-	.navbar-default .navbar-nav>.active>a:hover {
-		background-color: rgba(52, 152, 219, 1);
-		color: white;
-	}
-
-}
-
-header {	
-	background: url("../img/unsplash-kitsune-3.jpg");
-	background-size: cover;
-    background-attachment: fixed;
-	height: 100vh;
-}
-
-header {
-	color: #F8F8F8;
-	text-shadow: 0px 0px 21px rgba(20, 20, 20, 1);
-}
-header h1 {
-	font-size: 10vw;
-	font-weight: bold;
-}
-
-header h4 {
-	font-size: 7vw;
-	font-weight: bold;
-}
-#skills div {
-	margin-right: 0;
-	margin-left: 0;
-}
-
-
-.spacer {
-	background: #3498db;
-	width: 100px;
-	height: 2px;
-	margin: auto !important;
-}
-
-#contact {
-	background-color: rgba(52, 152, 219, 1);
+footer {
+	height: auto;
+	font-size: 20px;
+	background-color: #EE2C2C;
 	color: white;
-}
-
-#contact .btn {
-	font-weight: bold;
-	border-radius: 0px;
-	border: none;
-	background-color: #3498db;
-	color: white;
-	border: white 2px solid;
-	width: 100%;
-	transition: background-color 0.5s ease;
-	height: 50px;
-	font-size: 14px;
-}
-
-#contact .btn:hover {
-	background-color: white;
-	color: #3498db;
-	border: none;
-}
-
-.form-control {
-	border-radius: 0px;
-}
-
-textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
-	border-color: rgba(229, 103, 23, 0.8);
-	box-shadow: red inset, 0 0 8px rgba(229, 103, 23, 0.6);
-	outline: 0 none;
-}
-
-#get-in-touch {
-	padding-left: 0;
-}
-
-#contact .spacer {
-	background-color: white;
-}
-@media (min-width: 768px) {
-	textarea.form-control {
-		height: calc(100vh - 600px);
-	}
+	text-shadow: 0 0 40px black;
+	padding-top: 10px;
+	margin-top: 10px;
 }

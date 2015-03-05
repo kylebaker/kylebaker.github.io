@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body>	<!--This is the entire site-->
 
-	<header id="home" class="row-fluid" data-stellar-background-ratio="0.5">
-		<div id="nothing" class="col-sm-1"></div>
-		<div class="col-sm-10 text-center row-fluid">
-			<h1 class="col-xs-12 text-center">Kyle Baker</h1>
-			<h4 class="col-xs-12 text-center">Student and tech geek</h4>
+	<header id="home">
+		<div class="container">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+				<img src="img/logo.png" class="img-responsive">
+				<!--<h1>Dealing sugar and caffeine out of the back of a barbershop.</h1>-->
+			</div>
+			<div class="col-sm-12 text-center icons">
+				<a href="http://www.twitter.com/sodalicious"><i class="fa fa-twitter"></i></a>
+				<a href="http://www.facebook.com/SodaliciousUtah"><i class="fa fa-facebook-square"></i></a>
+				<a href="http://instagram.com/sodalicious/"><i class="fa fa-instagram"></i></a>
+			</div>
 		</div>
 	</header>
-	
-	<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header ">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,277 +34,210 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav" id="main-menu">
-				<li class="active"><a href="#home">Home</a></li>
-				<li class="active"><a href="#profile">Profile</a></li>
-				<li class="active"><a href="#skills">Skills</a></li>
-				<li class="active"><a href="#education">Education</a></li>
-				<li class="active"><a href="#experience">Experience</a></li>
-				<!--<li class="active"><a href="#portfolio">Portfolio</a></li>-->
-				<li class="active"><a href="#contact">Contact</a></li>
+				<li class="active"><a data-scroll href="#home">Home</a></li>
+				<li class="active"><a data-scroll href="#hours">Hours</a></li>
+				<li class="active"><a data-scroll href="#pictures">Pictures</a></li>
+				<li class="active"><a data-scroll href="#mixology">Mixology</a></li>
 			</ul>
 		</div>
 	</nav>
 
-	<section id="profile">
-		<div class="container">
-			<div class="row-fluid">
-				<div class="col-lg-12 text-center">
-					<h2>Profile</h2>
-					<div class="spacer"></div>
-					<h3>Lorem ipsum dolor sit amet, id iusto oportere mel.</h3>
-				</div>
-				<div class="row-fluid">
-					<div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1">
-						<img class="img-responsive img-circle" src="https://pbs.twimg.com/profile_images/485097356602249217/cMPvL-ch.jpeg">
-					</div>
-					<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 row-fluid">
-						<p class="col-xs-12">Lorem ipsum dolor sit amet, vel no saepe invenire, magna similique vis no. Eam tollit gloriatur ad, quaeque euismod tractatos usu eu. Apeirian detraxit consequat vis ne, natum brute quidam nec no. Sit in accusamus aliquando, an his aeque iusto delicata.</p>
-						<p class="col-xs-12">Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.</p>
-					</div>
-				</div>
+	<section id="hours">
+		<div class="container text-center">
+			<div class="col-sm-12">
+				<h1>Hours</h1>
+			</div>
+			<div class="col-sm-6">
+				<h2>30 W. 300 N.</h2>
+				<h2>Provo, Utah</h2>
+				<h3>Mon-Thurs: 7:30am - 10:00pm</h3>
+				<h3>Fri &amp; Sat: 7:30am - 11:00pm</h3>
+				<h3>Closed Sundays</h3>
+			</div>
+			<div class="col-sm-6">
+				<h2>The Village</h2>
+				<h2>Provo, Utah</h2>
+				<h3>Mon-Thurs: 7:30am - 10:00pm</h3>
+				<h3>Fri &amp; Sat: 7:30am - 11:00pm</h3>
+				<h3>Closed Sundays</h3>
 			</div>
 		</div>
 	</section>
 
-	<section id="skills" class="row-fluid other">
-		<div class="col-lg-12 text-center">
-			<h2>Skills</h2>
-			<div class="spacer"></div>
-			<h3>Lorem ipsum dolor sit amet, id iusto oportere mel.</h3>
-		</div>
-		<div class="col-xs-10 col-xs-offset-1 col-sm-4 row-fluid">
-			<i class="fa fa-code col-xs-12 fa-5x text-center"></i>
-			<h3>Coding:</h3>
-			<ul>
-				<li>HTML 5</li>
-				<li>CSS 3</li>
-				<li>Javascript</li>
-				<li>JQuery</li>
-				<li>C++</li>
-				<li>C#</li>
-				<li>ASP.net MVC</li>
-			</ul>
-		</div>
-		<div class="col-sm-4 row-fluid">
-			<i class="fa fa-desktop col-xs-12 fa-5x text-center"></i>
-			<h3>Programs:</h3>
-			<ul>
-				<li>Visual Studio</li>
-				<li>Eclipse</li>
-				<li>XCode</li>
-				<li>Aperture</li>
-				<li>Pixelmator</li>
-				<li>Final Cut Pro</li>
-			</ul>
-		</div>
-		<div class="col-sm-4 row-fluid">
-			<i class="fa fa-globe col-xs-12 fa-5x text-center"></i>
-			<h3>Other:</h3>
-			<ul>
-				<li>Fluent in Spanish</li>
-				<li>Photographer</li>
-				<li>Eagle Scout</li>
-				<li>People Person</li>
-				<li>Quick Learner</li>
-				<li>Self Driven</li>
-				<li>Dependable</li>
-			</ul>
-		</div>
-	</section>
+	<section id="pictures">
+		<div class="text-center">
+			<div>
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-	<section id="education">
-		<div class="container">
-			<div class="row-fluid ">
-				<div class="col-lg-12 text-center">
-					<h2>Education</h2>
-					<div class="spacer"></div>
-					<h3>Lorem ipsum dolor sit amet, id iusto oportere mel.</h3>
-				</div>
-				<div class="col-xs-12 ">
-					<div class="row-fluid">
-						<div class="col-xs-12 col-sm-6 row-fluid">
-							<h2 class="col-xs-12">Brigham Young University</h2>
-							<h4 class="col-xs-12">2010-Present - <strong>Information Technology</strong></h4>
-							<p class="col-xs-12"> Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam. </p>
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img class="img-responsive" src="img/cara2.jpg" alt="Chania">
+							<div class="carousel-caption">
+								<h1>Big Fat Crispie, another Sodalicious Original</h1>
+							</div>
 						</div>
-						<div class="col-xs-12 col-sm-6 ">
-							<h2 class="col-xs-12">Kelso High School</h2>
-							<h4 class="col-xs-12">Class of 2010 - <strong>Valedictorian</strong></h4>
-							<p class="col-xs-12"> Lorem ipsum dolor sit amet, ut pri munere perfecto sadipscing, nam habeo legere disputationi ea. Vis nostrud intellegat eu, in vix erat abhorreant accommodare. Vix id elit albucius suavitate. Eos mentitum forensibus et. Vix et quidam moderatius, cu vim quem tibique constituam. </p>
+						<div class="item">
+							<img class="img-responsive" src="img/cara3.jpg" alt="Flower">
+							<div class="carousel-caption">
+								<h1>Make it dirty with the finest of flavors</h1>
+							</div>
 						</div>
-						<!-- <img class="col-xs-12 col-sm-6" src="http://marriottschool.byu.edu/upload/event/event_183/_img/Byuwordmark.png"> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="experience" class="other">
-		<div class="container">
-			<div class="row-fluid">
-				<div class="col-lg-12 text-center">
-					<h2>Experience</h2>
-					<div class="spacer"></div>
-					<h3>Lorem ipsum dolor sit amet, id iusto oportere mel.</h3>
-				</div>
-				<div class="row-fluid ">
-					<div class="col-xs-12 col-sm-4">
-						<!-- <img class="img-responsive" src="http://direct-vs-dish.com/media/channel_logos/byu_tv.png.300x300_q85.png"> -->
-						<h2>BYU Broadcasting - Student Manager</h2>
-						<h4>January 2014 - Present</h4>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Coded for websites such as byutv.org, byutvsports.org and byuradio.org</p>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Collaborated on a team designing and implementing different web layouts</p>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Worked with C++, C#, HTML, CSS, and Javascript using the ASP.net MVC model</p>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!--<img class="img-responsive" src="http://www.kelso.wednet.edu/Portals/0/Images/ksdlogo_color.gif">-->
-						<h2>Missionary - Church of Jesus Christ of Latter-day Saints</h2>
-						<h4>December 2011 - December 2013</h4>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Managed a group of missionaries over multiple regions in Guatemala</p>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Directed weekly meetings and workshops to increase productivity and efficiency</p>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Trained four times new missionaries</p>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!-- <img class="img-responsive" src="http://upload.wikimedia.org/wikipedia/commons/2/29/NintendoLogo.png"> -->
-						<h2>Kelso School District - Computer Support Technician </h2>
-						<h4>Summer 2010 / Summer 2011</h4>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Assisted in the maintenance of school computers</p>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Collaborated with staff to work through and / or troubleshoot equipment</p>
-						<p><i class="fa fa-angle-right"></i>&nbsp;Aided in computer repairs / operating system failures when needed</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- <section id="portfolio">
-		<div class="container">
-			<div class="row-fluid">
-				<div class="col-lg-12 text-center">
-					<h2>Portfolio</h2>
-					<div class="spacer"></div>
-					<h3>Lorem ipsum dolor sit amet, id iusto oportere mel.</h3>
-				</div>
-				<div class="col-xs-6 col-md-4">
-					<a href="#" class="thumbnail">
-						<img class="img-responsive" src="img/Portfolio/Bridges.jpg" alt="...">
-					</a>
-				</div>
-				<div class="col-xs-6 col-md-4">
-					<a href="#" class="thumbnail">
-						<img class="img-responsive"  src="img/Portfolio/Hair.jpg" alt="...">
-					</a>
-				</div>
-				<div class="col-xs-6 col-md-4">
-					<a href="#" class="thumbnail">
-						<img class="img-responsive"  src="img/Portfolio/Plane.jpg" alt="...">
-					</a>
-				</div>
-				<div class="col-xs-6 col-md-4">
-					<a href="#" class="thumbnail">
-						<img class="img-responsive"  src="img/Portfolio/Farm.jpg" alt="...">
-					</a>
-				</div>
-				<div class="col-xs-6 col-md-4">
-					<a href="#" class="thumbnail">
-						<img class="img-responsive" src="img/Portfolio/Portland-Temple.jpg" alt="...">
-					</a>
-				</div>
-				<div class="col-xs-6 col-md-4">
-					<a href="#" class="thumbnail">
-						<img class="img-responsive" src="img/Portfolio/Mirrors.jpg" alt="...">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section id="contact">
-		<div class="container">
-			<div class="row-fluid">
-				<div class="col-lg-12 text-center">
-					<h2>Contact</h2>
-					<div class="spacer"></div>
-					<h3>Lorem ipsum dolor sit amet, id iusto oportere mel.</h3>
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="row-fluid">
-					<div class="col-xs-12 col-sm-5">
-						<h2>Contact Info</h2>
-						<h5><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;&nbsp;1340 N Freedom Blvd 220, Provo, UT 84604</h5>
-						<h5><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;(360) 326-5763</h5>
-						<h5><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;kylethomasbaker@gmail.com</h5>
-					</div>
-					<div class="col-xs-12 col-sm-7">
-						<div class="row-fluid">
-							<h2 id="get-in-touch" class="col-xs-12">Get in Touch</h2>
-							<div> <!--col-lg-8 col-lg-offset-2-->
-								<form role="form">
-									<div class="row-fluid">
-										<div class="form-group col-xs-12 floating-label-form-group">
-											<label for="name">Name</label>
-											<input class="form-control" type="text" name="name" placeholder="Your Name">
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="form-group col-xs-12 floating-label-form-group">
-											<label for="email">Email Address</label>
-											<input class="form-control" type="email" name="email" placeholder="Your Email Address">
-										</div>
-									</div>
-									<div class="row-fluid">
-										<div class="form-group col-xs-12 floating-label-form-group">
-											<label for="message">Message</label>
-											<textarea placeholder="" class="form-control" row-fluids="5"></textarea>
-										</div>
-									</div>
-									<br>
-									<div class="row-fluid">
-										<div class="form-group col-xs-12">
-											<button type="submit" id="submit-button" class="btn btn-lg btn-success">S U B M I T &nbsp;&nbsp;M E S S A G E</button>
-										</div>
-									</div>
-								</form>
+						<div class="item">
+							<img class="img-responsive" src="img/cara4.jpg" alt="Flower">
+							<div class="carousel-caption">
+								<h1>Lava, a Sodalicious Original</h1>
+							</div>
+						</div>
+						<div class="item">
+							<img class="img-responsive" src="img/cara5.jpg" alt="Flower">
+							<div class="carousel-caption">
+								<h1>Featuring Cravings Original Dutchman cookies.</h1>
 							</div>
 						</div>
 					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer class="container">
+	<section id="hi">
+		<h1 id="mixology" class="col-xs-4 col-xs-offset-4 text-center">Mixology</h1>
+	</section>
 
+	<section class="mixology container-fluid mixology text-center">
+		<div class="col-xs-6 col-sm-4">
+			<h3>Dirty</h3>
+			<h4>Coconut, Fresh Lime</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Extra Dirty</h3>
+			<h4>Half &amp; Half</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Your Mom</h3>
+			<h4>Dr. Pepper, Coconut, Blackberry</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>AK Special</h3>
+			<h4>Dr. Pepper, Double Coconut, Pomegranate, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Black Forest</h3>
+			<h4>Dr. Pepper, Cherry, Horchata</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>El Doctoro</h3>
+			<h4>Dr. Pepper, Horchata</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Mango Mtn Dew</h3>
+			<h4>Mtn Dew, Mango Puree</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>2nd Wife</h3>
+			<h4>Mtn Dew, Blood Orange, Mango</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Blue Bombshell</h3>
+			<h4>Mtn Dew, Blue Curacao, Passion Fruit, Coconut</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Persephone</h3>
+			<h4>Mtn Dew, Pomegranate, Fresh Lime</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Boy Scout</h3>
+			<h4>Rootbeer, Toasted Marshmallow, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>O' Ryan</h3>
+			<h4>Rootbeer, Vanilla, Caramel</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Castaway</h3>
+			<h4>7up, Coconut, Guava, Fresh Lime, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Eternal Companion</h3>
+			<h4>7up, Blue Curacao, Peach</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>What She's Having</h3>
+			<h4>7up, Blood Orange, Strawberry, Cherry, Watermelon</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Funky Cold Medina</h3>
+			<h4>Fresca, Peach, Blue Curacao, Cranberry, Fresh Lime</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Civil Marriage</h3>
+			<h4>Lemonade, Blue Curacao, Peach</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Viking</h3>
+			<h4>Coke Zero, Rasberry Puree, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Just Friends</h3>
+			<h4>Diet Coke, Pineapple, Coconut, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Rocky Mountain High</h3>
+			<h4>Coke, Cherry, Coconut, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>I Love Lucy</h3>
+			<h4>Coke, Cranberry, Raspberry, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Gold Medalist</h3>
+			<h4>Orange Bang, Mtn Dew, Coconut, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Orange Creamcicle</h3>
+			<h4>Orange Bang, Vanilla, Extra Dirty, Whip Cream</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>It's Not Me, It's You</h3>
+			<h4>Pepsi, Raspberry Puree, Vanilla, Extra Dirty</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>My-ty</h3>
+			<h4>Fresca, Grapefruit, Lime</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>NCMO</h3>
+			<h4>Code Red Mtn Dew, Raspberry, Pineapple</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Cherrylicious</h3>
+			<h4>Dr. Pepper, Cherry, Cheesecake</h4>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<h3>Naughty Boy</h3>
+			<h4>Pepsi, Coconut, Blue Curacao</h4>
+		</div>
+	</section>
+
+
+	<footer class="container-fluid">
+		<p>Copyright &copy; Sodalicious, Inc., All rights reserved</p>
 	</footer>
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<script src="js/viewport-units-buggyfill.js"></script>
-	<!--<script type="text/javascript" href="js/jquery.stellar.min.js"></script>-->
-	<script>
-	$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top - 50
-					}, 1000);
-					return false;
-				}
-			}
-		});
-
-		window.viewportUnitsBuggyfill.init();
-
-		/*$('header').stellar({
-			scrollProperty: 'scroll',
-			horizontalScrolling: false,
-			positionProperty: 'position'
-		});*/
-	});
-	</script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="js/smooth-scroll.min.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>

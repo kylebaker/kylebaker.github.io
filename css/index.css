@@ -35,6 +35,10 @@ header h1 {
 	text-shadow: 0 0 40px black;
 }
 
+header#home img {
+	filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+}
+
 .fa {
 	padding-top: 30px;
 	padding-left: 25px;

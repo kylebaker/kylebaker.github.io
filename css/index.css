@@ -12,13 +12,13 @@ nav {
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+	display: inline-block;
+	float: none;
+	vertical-align: top;
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+	text-align: center;
 }
 
 header {
@@ -36,7 +36,7 @@ header h1 {
 }
 
 header#home img {
-	filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+
 }
 
 .fa {
@@ -118,4 +118,10 @@ footer {
 	text-shadow: 0 0 40px black;
 	padding-top: 10px;
 	margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		height: 40vh;    
+	}
 }

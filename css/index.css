@@ -26,7 +26,7 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	height: 80vh;
-	padding-top: 15vh;
+	padding-top: 10vh;
 }
 
 header h1 {
@@ -50,6 +50,21 @@ header#home img {
 
 .fa:hover {
 	color: white;
+}
+
+.btn {
+	font-size: 30px;
+	background-color: #0099FF;
+	color: white;
+	border: none;
+	padding: 20px 15px 15px 15px;
+	border-radius: 10px;
+	font-family: "Jaapokki";
+}
+
+.btn:hover {
+	background-color: white;
+	color: #0099FF;
 }
 
 section#hours {

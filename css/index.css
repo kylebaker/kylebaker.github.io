@@ -125,6 +125,10 @@ section.mixology div{
 	//color: white;
 }
 
+footer.with-top-margin {
+	margin-top: 10px;
+}
+
 footer {
 	height: auto;
 	font-size: 20px;
@@ -132,11 +136,35 @@ footer {
 	color: white;
 	text-shadow: 0 0 40px black;
 	padding-top: 10px;
-	margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
 	body {
 		height: 40vh;    
 	}
+}
+
+/*FOR APPLICATIONS STUFF*/
+
+body#app {
+	background: url("http://s3-media1.fl.yelpassets.com/bphoto/eTPMZcw2HQuB6OI77A2DqA/o.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: "Jaapokki";
+}
+
+.app-header {
+	margin-top: 100px;
+}
+
+body#app .btn {
+	margin-top: 10px;
+}
+
+.bottom {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
